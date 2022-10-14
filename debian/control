@@ -1,0 +1,28 @@
+Source: node-regenerator-transform
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
+ , node-babel-cli (>= 7) <!nocheck>
+ , node-babel-core (>= 7) <!nocheck>
+ , node-babel-plugin-transform-runtime (>= 7) <!nocheck>
+ , node-babel-preset-env (>= 7) <!nocheck>
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-regenerator-transform
+Vcs-Git: https://salsa.debian.org/js-team/node-regenerator-transform.git
+Homepage: https://github.com/facebook/regenerator/tree/master/packages/regenerator-transform
+Rules-Requires-Root: no
+
+Package: node-regenerator-transform
+Architecture: all
+Depends: ${misc:Depends}
+ , node-babel-runtime (>= 7)
+Description: Explode async and generator functions into a state machine
+ This library is a build dependency of babel.
+ .
+ Note: Since this package require babel to build, it is uploaded to contrib.
+ .
+ Node.js is an event-based server-side JavaScript engine.

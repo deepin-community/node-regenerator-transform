@@ -1,0 +1,106 @@
+node-regenerator-transform (0.14.5-4) unstable; urgency=medium
+
+  * Team upload.
+
+  * revert to depend on recent node-babel-runtime
+    (not node-babel7)
+    (see bug#977692)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Dec 2020 02:09:57 +0100
+
+node-regenerator-transform (0.14.5-3) unstable; urgency=medium
+
+  * Team upload.
+
+  * temporarily depend on node-babel7
+    (not recent node-babel-runtime)
+    to work around dependency loop with src:node-babel7
+    (see bug#977692)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 19 Dec 2020 01:31:12 +0100
+
+node-regenerator-transform (0.14.5-2) unstable; urgency=medium
+
+  * Team upload.
+
+  * build-depend on recent node-babel-cli node-babel-core
+    node-babel-plugin-transform-runtime node-babel-preset-env
+    (not node-babel7);
+    depend on recent node-babel-runtime
+    (not node-babel7)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Fri, 18 Dec 2020 18:11:00 +0100
+
+node-regenerator-transform (0.14.5-1) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+  * New upstream version 0.14.5
+  * Remove dependency to node-private
+  * Fix "files" field
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 06 Oct 2020 13:39:56 +0200
+
+node-regenerator-transform (0.14.4-1) unstable; urgency=medium
+
+  * Team upload
+  * Remove useless dependencies to node-babel-runtime and node-babel-types
+  * Add dependency to node-babel7
+  * New upstream version 0.14.4
+  * Refresh patch
+  * Remove lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 09 May 2020 13:35:23 +0200
+
+node-regenerator-transform (0.14.1-3) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Repository.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Partial revert of 0.14.1-1: restore babel 6 options in package.json
+    (Closes: #952457)
+  * Declare compliance with policy 4.5.0
+  * Add lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 25 Feb 2020 05:50:29 +0100
+
+node-regenerator-transform (0.14.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add debian/gbp.conf
+  * Update debian/watch to use npm registry
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 19 Nov 2019 19:54:16 +0100
+
+node-regenerator-transform (0.14.1-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 0.14.1
+  * Update d/{compat, control, copyright} wrt cme
+  * Add d/upstream/metadata
+  * Switch test and install to pkg-js-tools
+  * Update d/watch version and URL
+  * Add node-private as a dependency
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Fri, 30 Aug 2019 01:50:58 +0530
+
+node-regenerator-transform (0.9.8-2) unstable; urgency=medium
+
+  * Move to main (babel is in main now)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 27 Sep 2017 17:24:17 +0530
+
+node-regenerator-transform (0.9.8-1) unstable; urgency=low
+
+  * Initial release (Closes: #849096)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 12 Aug 2017 11:48:35 +0530

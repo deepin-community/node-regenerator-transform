@@ -1,0 +1,25 @@
+Description: fix babel config
+Author: Xavier Guimard <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/952457
+Forwarded: not-needed
+Last-Update: 2020-02-24
+
+--- a/package.json
++++ b/package.json
+@@ -23,12 +23,10 @@
+       "@babel/plugin-transform-runtime"
+     ],
+     "presets": [
+-      [
+-        "@babel/preset-env",
+-        {
+-          "loose": true
+-        }
+-      ]
++      ["es2015", { "loose": true }]
++    ],
++    "plugins": [
++      "transform-runtime"
+     ]
+   },
+   "dependencies": {

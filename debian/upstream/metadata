@@ -1,0 +1,7 @@
+---
+Archive: GitHub
+Bug-Database: https://github.com/facebook/regenerator/issues
+Bug-Submit: https://github.com/facebook/regenerator/issues
+Changelog: https://github.com/facebook/regenerator/tags
+Repository: https://github.com/facebook/regenerator.git -b master/packages/regenerator-transform
+Repository-Browse: https://github.com/facebook/regenerator/tree/master/packages/regenerator-transform
